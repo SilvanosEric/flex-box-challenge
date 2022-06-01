@@ -1,5 +1,6 @@
 $primary-color: #2e323f;
 $secondary-color: #a59678;
+$primary-light-color: #3b4050;
 
 $font-primary: "Montserrat";
 $font-secondary: "Oswald";
@@ -12,4 +13,5 @@ $font-stack: (
 $colors: (
   "primary": $primary-color,
   "secondary": $secondary-color,
+  "primary-light": $primary-light-color,
 );

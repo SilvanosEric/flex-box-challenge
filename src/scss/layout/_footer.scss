@@ -1,0 +1,30 @@
+@use "../utils/" as *;
+
+.footer {
+  background-color: color(primary);
+  padding-top: 2em;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5em;
+  font-family: font(primary);
+  padding-bottom: 2em;
+
+  &__title {
+    padding: 0 2em 0.6em;
+    font-family: font(secondary);
+  }
+
+  h3 {
+    font: font(secondary);
+    color: color(secondary);
+    margin: 1.2em 0 0.4em;
+  }
+
+  .nav {
+    line-height: 1.6em;
+
+    &__link:hover {
+      border: solid color(secondary);
+    }
+  }
+}

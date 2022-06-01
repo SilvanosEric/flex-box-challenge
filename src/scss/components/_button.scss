@@ -1,0 +1,16 @@
+@use "../utils/" as *;
+
+.btn {
+  background-color: color(secondary);
+  border-radius: 3em;
+  padding: 0.4em 0.6em;
+  text-transform: uppercase;
+  transition: transform 0.3s ease-out;
+  display: inline-block;
+  font-weight: bold;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}

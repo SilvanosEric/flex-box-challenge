@@ -1,13 +1,15 @@
 html {
   box-sizing: border-box;
-  font-size: 10px;
+  font-size: 62.5%; // Allows the user to control the size of the base font on the website. Enhances Accessibility
 }
 
 body {
   font-size: 1.6rem;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;

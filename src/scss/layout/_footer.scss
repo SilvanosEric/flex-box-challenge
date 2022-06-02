@@ -21,10 +21,24 @@
   }
 
   .nav {
-    line-height: 1.6em;
+    line-height: 2.2em;
 
     &__link:hover {
       border: solid color(secondary);
+    }
+  }
+
+  &__nav {
+    margin-top: 2em;
+
+    @include breakpoint(medium) {
+      display: flex;
+    }
+  }
+
+  &__links {
+    @include breakpoint(medium) {
+      width: 100%;
     }
   }
 }

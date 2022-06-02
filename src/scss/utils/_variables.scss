@@ -17,7 +17,8 @@ $colors: (
 );
 
 // breakpoints 700px and 1000px
+// media query breakpoints are based on the default browser font size setting. Not on the root elements font size. Most browser settings have a default font size of 16px.
 $breakpoints: (
-  "medium": 70rem,
-  "large": 100rem,
+  "medium": 43.75rem,
+  "large": 62.5rem,
 );

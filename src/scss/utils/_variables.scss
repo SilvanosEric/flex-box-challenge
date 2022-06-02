@@ -15,3 +15,9 @@ $colors: (
   "secondary": $secondary-color,
   "primary-light": $primary-light-color,
 );
+
+// breakpoints 700px and 1000px
+$breakpoints: (
+  "medium": 70rem,
+  "large": 100rem,
+);

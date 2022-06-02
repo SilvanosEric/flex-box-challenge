@@ -7,3 +7,9 @@
 @function color($color) {
   @return map-get($map: $colors, $key: $color);
 }
+
+@mixin breakpoint($size) {
+  @media (min-width: #{$size}) {
+    @content;
+  }
+}

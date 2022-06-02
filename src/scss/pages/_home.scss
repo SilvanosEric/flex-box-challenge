@@ -4,13 +4,25 @@
   .hero {
     background-color: color(primary-light);
     color: #fff;
-    padding-bottom: 1.4em;
+    padding-block: $padding * 1.2;
     text-align: center;
+
+    .container {
+      @include breakpoint(large) {
+        display: flex;
+        gap: 1em;
+        text-align: left;
+      }
+    }
 
     &__heading {
       h1 {
-        margin-top: 0;
-        padding-top: 1em;
+        margin: 0;
+        font-family: font(secondary);
+
+        @include breakpoint(large) {
+          font-size: 9rem;
+        }
       }
 
       span {
@@ -19,10 +31,15 @@
     }
 
     &__text {
+      align-self: flex-end;
       line-height: 1.6em;
 
       P {
         font-family: font(primary);
+        @include breakpoint(large) {
+          font-size: 2.4rem;
+          line-height: 1.5em;
+        }
       }
     }
 
@@ -30,51 +47,74 @@
       margin-top: 1.5em;
       font-family: font(secondary);
       letter-spacing: 0.1em;
+      @include breakpoint(large) {
+        font-size: 2.4rem;
+      }
     }
   }
 
   .features {
     background-color: lighten(silver, 10);
-    padding-top: 1em;
-    padding-bottom: 2em;
+    padding-block: $padding;
     text-align: center;
     line-height: 1.5em;
 
     .container {
       @include breakpoint(medium) {
-        display: flex;
-        gap: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
       }
     }
 
     h2 {
       color: color(secondary);
-      margin-top: 1em;
+      @include breakpoint(large) {
+        font-size: 3rem;
+        margin-bottom: 0.8em;
+      }
     }
 
     p {
       margin-top: 0.4em;
+      font-family: font(primary);
+      @include breakpoint(large) {
+        font-size: 1.8rem;
+      }
     }
   }
 
   .primary-content {
-    padding-top: 1.4em;
-    padding-bottom: 2em;
+    padding-block: $padding;
+
+    .container {
+      @include breakpoint(large) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 5.5em;
+      }
+    }
 
     p {
       font-family: font(primary);
       line-height: 1.5em;
-      margin-top: 1em;
+      margin-top: 2em;
+      @include breakpoint(large) {
+        font-size: 2.1rem;
+      }
     }
 
     &__main {
       h2 {
         color: color(secondary);
         font-family: font(secondary);
+        @include breakpoint(large) {
+          font-size: 3.6rem;
+        }
       }
 
       img {
-        margin-top: 1.5em;
+        margin-top: 2.5em;
 
         @include breakpoint(medium) {
           width: 100%;
@@ -87,6 +127,22 @@
       @include breakpoint(medium) {
         display: flex;
         gap: 1em;
+      }
+
+      @include breakpoint(large) {
+        flex-direction: column;
+      }
+
+      h2 {
+        @include breakpoint(large) {
+          font-size: 3rem;
+        }
+      }
+
+      p {
+        @include breakpoint(large) {
+          font-size: 1.8rem;
+        }
       }
 
       .card {

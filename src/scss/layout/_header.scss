@@ -4,12 +4,32 @@
   background-color: color(primary);
   text-align: center;
 
+  .container {
+    @include breakpoint(large) {
+      display: flex;
+    }
+  }
+
   .logo {
     padding: 1em 0;
   }
 
   .nav {
     font-size: 1.8rem;
+    @include breakpoint(large) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 3em;
+    }
+
+    &__list {
+      @include breakpoint(large) {
+        display: flex;
+        gap: 1.5em;
+        align-items: center;
+      }
+    }
 
     &__link {
       text-transform: uppercase;
@@ -25,6 +45,9 @@
 
     &__item--btn {
       margin-bottom: 0.8em;
+      @include breakpoint(large) {
+        margin-bottom: 0;
+      }
     }
   }
 }

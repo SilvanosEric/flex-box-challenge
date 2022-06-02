@@ -2,26 +2,40 @@
 
 .footer {
   background-color: color(primary);
-  padding-top: 2em;
   color: #fff;
   text-align: center;
   line-height: 1.5em;
-  font-family: font(primary);
-  padding-bottom: 2em;
+  padding-block: $padding;
 
   &__title {
     padding: 0 2em 0.6em;
     font-family: font(secondary);
+    @include breakpoint(large) {
+      font-size: 4.4rem;
+    }
   }
 
   h3 {
     font: font(secondary);
     color: color(secondary);
     margin: 1.2em 0 0.4em;
+    @include breakpoint(large) {
+      font-size: 2.1rem;
+    }
+  }
+
+  p {
+    font-family: font(primary);
+    @include breakpoint(large) {
+      font-size: 1.6rem;
+    }
   }
 
   .nav {
     line-height: 2.2em;
+    @include breakpoint(large) {
+      line-height: 1.8em;
+    }
 
     &__link:hover {
       border: solid color(secondary);

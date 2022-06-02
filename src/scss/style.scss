@@ -1,23 +1,14 @@
-// abstracts
-@use "../scss/utils/variables";
-@use "../scss/utils/functions";
-@use "../scss/utils/mixins";
-
 // vendors
-@use "../scss/vendors/vendors";
+@forward "vendors/";
 
 // base
-@use "../scss/base/reset";
-@use "../scss/base/typography";
+@forward "base/";
 
 // layout
-@use "../scss/layout/nav";
-@use "../scss/layout/header";
-@use "../scss/layout/footer";
+@forward "layout/";
 
 // components
-@use "../scss/components/button";
-@use "../scss/components/card";
+@forward "components/";
 
 // pages
-@use "../scss/pages/home";
+@forward "pages/";
